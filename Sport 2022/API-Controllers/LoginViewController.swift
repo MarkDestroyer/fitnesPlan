@@ -8,11 +8,22 @@
 import Strapi_iOS
 import UIKit
 import SwiftEntryKit
+import AVFoundation
 
 class LoginViewController: UIViewController {
     let strapi = Strapi.shared
     var data: Data?
     
+    var audioPlayer = AVAudioPlayer()
+    
+    func failsound() {
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "fail2", ofType: "mp3") ?? ""))
+            audioPlayer.play()
+        } catch {
+            print(error)
+        }
+    }
     
     @IBOutlet weak var EmailTextField: UITextField!
     @IBOutlet weak var PassWordTextField: UITextField!
@@ -106,7 +117,7 @@ class LoginViewController: UIViewController {
     func setupMessage() -> EKPopUpMessage {
         
         let image = UIImage(named: "40")!.withRenderingMode(.alwaysOriginal)
-        let title = "Ошибка!"
+        let title = "Данные не введены!"
         let description =
         """
         Введите логин и пароль
@@ -149,7 +160,7 @@ class LoginViewController: UIViewController {
     func setupMessage2() -> EKPopUpMessage {
         
         let image = UIImage(named: "40")!.withRenderingMode(.alwaysOriginal)
-        let title = "Ошибка!"
+        let title = "Данные не введены!"
         let description =
         """
         Введите логин
@@ -192,7 +203,7 @@ class LoginViewController: UIViewController {
     func setupMessage3() -> EKPopUpMessage {
         
         let image = UIImage(named: "40")!.withRenderingMode(.alwaysOriginal)
-        let title = "Ошибка!"
+        let title = "Данные не введены!"
         let description =
         """
         Введите пароль
@@ -274,7 +285,6 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func login() {
-        print("Начало работы программы")
         strapi.scheme = "https"
         strapi.host = "fitness.zeons.ru"
         strapi.port = 443
@@ -284,13 +294,12 @@ class LoginViewController: UIViewController {
         strapi.login(
             identifier:  EmailTextField.text!,
             password: PassWordTextField.text!) { response in
-          //  guard let record = response.data as? [String: Any] else {return}
+                
                 guard let record = response.data  else {return}
                 self.data = record as? Data
                 print(self.data?.prettyJSON)
                 print("Получили ответ, декодим JSON, присвоили его переменным")
                 
-              //  Session.shared.userProfile = record
                 do{
                     let userProfile = try? JSONDecoder().decode(UserProfile.self, from: self.data!)
                     Session.shared.userProfile = userProfile
@@ -310,10 +319,13 @@ class LoginViewController: UIViewController {
         } else if EmailTextField.text == ""  && PassWordTextField.text == "" {
             print("введите данные")
             handleShowPopUp()
+            failsound()
         } else if EmailTextField.text == "" {
             handleShowPopUp2()
+            failsound()
         } else if PassWordTextField.text == "" {
             handleShowPopUp3()
+            failsound()
         }
     }
     
@@ -333,13 +345,11 @@ class LoginViewController: UIViewController {
             username: "My name",
             email: EmailTextField.text!,
             password: PassWordTextField.text!) { response in
-                //  guard let record = response.data as? [String: Any] else {return}
                       guard let record = response.data  else {return}
                       self.data = record as? Data
                       print(self.data?.prettyJSON)
                       print("Получили ответ, декодим JSON, присвоили его переменным")
                       
-                    //  Session.shared.userProfile = record
                       do{
                           let userProfile = try? JSONDecoder().decode(UserProfile.self, from: self.data!)
                           Session.shared.userProfile = userProfile
@@ -359,10 +369,13 @@ class LoginViewController: UIViewController {
               } else if EmailTextField.text == ""  && PassWordTextField.text == "" {
                   print("введите данные")
                   handleShowPopUp()
+                  failsound()
               } else if EmailTextField.text == "" {
                   handleShowPopUp2()
+                  failsound()
               } else if PassWordTextField.text == "" {
                   handleShowPopUp3()
-       }
+                  failsound()
+        }
     }
 }

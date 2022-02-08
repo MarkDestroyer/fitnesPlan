@@ -21,7 +21,7 @@ class RoundedImageView: UIImageView {
     
     @IBAction func tapFunction(sender: UITapGestureRecognizer) {
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "spring", ofType: "mp3") ?? ""))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Bundle.main.path(forResource: "spring2", ofType: "mp3") ?? ""))
             audioPlayer.play()
         } catch {
             print(error)

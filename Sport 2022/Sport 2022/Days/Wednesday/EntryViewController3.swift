@@ -398,7 +398,7 @@ class EntryViewController3: UIViewController,UITextFieldDelegate {
         self.view.addSubview(weightTextField6)
         
         saveTraningButton()
-        // Do any additional setup after loading the view.
+       
     }
 }
     func ServiceLabel(text: String, x: Int, y: Int){
@@ -411,9 +411,7 @@ class EntryViewController3: UIViewController,UITextFieldDelegate {
         serviceLabel.backgroundColor = UIColor.white
         self.view.addSubview(serviceLabel)
     }
-//    func traning(text: String, x: Int, y: Int){
-//
-//    }
+
     func saveTraningButton (){
         let button = UIButton(type: .custom)
         button.frame = CGRect(x: 28 , y: 600, width: 343, height: 56)

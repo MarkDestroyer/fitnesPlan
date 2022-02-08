@@ -462,6 +462,7 @@
                     <connections>
                         <outlet property="Birthday" destination="JDA-39-mVW" id="5kJ-Gf-9q1"/>
                         <outlet property="Email" destination="tF5-O0-DSD" id="Rk1-7q-ymA"/>
+                        <outlet property="ProfileImage" destination="G55-Ms-ICX" id="FnJ-pV-Jnr"/>
                         <outlet property="UserName" destination="NyL-2S-QQs" id="EQZ-z5-AjY"/>
                     </connections>
                 </viewController>

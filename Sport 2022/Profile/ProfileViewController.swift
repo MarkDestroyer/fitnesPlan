@@ -13,7 +13,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var UserName: UILabel!
     @IBOutlet weak var Email: UILabel!
     @IBOutlet weak var Birthday: UILabel!
-
+    @IBOutlet weak var ProfileImage: UIImageView!
     
     let realm = try! Realm()
     
@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadData()
+        ProfileImage.loadGif(name: "sport")
     }
     
     
