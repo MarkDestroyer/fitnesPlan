@@ -29,7 +29,7 @@ final class ExerciseAPI{
         guard let data = response.data else {return}
         self.data = data as? Data
         do{
-          //  print(self.data?.prettyJSON)
+            print(self.data?.prettyJSON)
             print("Парсим JSON упражнений")
             
             let exerciseJSON = try JSONDecoder().decode([ExerciseProfiles].self, from: self.data!)

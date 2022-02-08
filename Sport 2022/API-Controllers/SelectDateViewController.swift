@@ -30,6 +30,7 @@ class SelectDateViewController: UIViewController,CalendarViewDelegate {
     }
     
     @IBAction func beginTraning(_ sender: Any) {
+    
     }
     
     override func viewDidLoad() {

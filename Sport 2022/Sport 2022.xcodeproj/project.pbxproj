@@ -32,14 +32,12 @@
 		826611A527B1A9FD0011F7A0 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826611A427B1A9FD0011F7A0 /* CustomAlert.swift */; };
 		826611A727B1AABA0011F7A0 /* UIView + Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826611A627B1AABA0011F7A0 /* UIView + Message.swift */; };
 		826611A927B1AE1D0011F7A0 /* sport.gif in Resources */ = {isa = PBXBuildFile; fileRef = 826611A827B1AE1D0011F7A0 /* sport.gif */; };
-		826AA22027B2204C00B76D53 /* fail.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 826AA21F27B2204C00B76D53 /* fail.mp3 */; };
-		826AA22227B2220D00B76D53 /* fail2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 826AA22127B2220C00B76D53 /* fail2.mp3 */; };
-		826AA22527B2234600B76D53 /* spring2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 826AA22427B2234600B76D53 /* spring2.mp3 */; };
 		8282AA2E2776988C009471C5 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8282AA2D2776988C009471C5 /* EntryViewController.swift */; };
 		8285115827A97C3B00D67B2C /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285115427A97C3B00D67B2C /* ExercisesModel.swift */; };
 		8285115927A97C3B00D67B2C /* customModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285115527A97C3B00D67B2C /* customModel.swift */; };
 		8287784127948A1D00FE442B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287784027948A1D00FE442B /* Gradient.swift */; };
 		8287784327948C7000FE442B /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287784227948C7000FE442B /* GIF.swift */; };
+		82DFB40A27B2595000D7DA16 /* sport.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82DFB40927B2595000D7DA16 /* sport.gif */; };
 		82F4B0E427B126CF00F3661D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4B0E327B126CF00F3661D /* ProfileViewController.swift */; };
 		82F4B0EC27B139D300F3661D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4B0EB27B139D300F3661D /* HomeViewController.swift */; };
 		82F4B0F727B170D000F3661D /* SpringImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4B0F627B170D000F3661D /* SpringImage.swift */; };
@@ -76,14 +74,12 @@
 		826611A427B1A9FD0011F7A0 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		826611A627B1AABA0011F7A0 /* UIView + Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Message.swift"; sourceTree = "<group>"; };
 		826611A827B1AE1D0011F7A0 /* sport.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sport.gif; path = "../../../../../Фитнес/sport.gif"; sourceTree = "<group>"; };
-		826AA21F27B2204C00B76D53 /* fail.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fail.mp3; path = "../../../../../Music/Music/Media.localized/Unknown Artist/Unknown Album/fail.mp3"; sourceTree = "<group>"; };
-		826AA22127B2220C00B76D53 /* fail2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fail2.mp3; path = "../../../../../Music/Music/Media.localized/Unknown Artist/Unknown Album/fail2.mp3"; sourceTree = "<group>"; };
-		826AA22427B2234600B76D53 /* spring2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spring2.mp3; path = "../../../../../Music/Music/Media.localized/Unknown Artist/Unknown Album/spring2.mp3"; sourceTree = "<group>"; };
 		8282AA2D2776988C009471C5 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		8285115427A97C3B00D67B2C /* ExercisesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		8285115527A97C3B00D67B2C /* customModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customModel.swift; sourceTree = "<group>"; };
 		8287784027948A1D00FE442B /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		8287784227948C7000FE442B /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
+		82DFB40927B2595000D7DA16 /* sport.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sport.gif; path = "../../../../Фитнес/sport.gif"; sourceTree = "<group>"; };
 		82F4B0E327B126CF00F3661D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		82F4B0EB27B139D300F3661D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		82F4B0F627B170D000F3661D /* SpringImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringImage.swift; sourceTree = "<group>"; };
@@ -168,10 +164,8 @@
 		82576DBF277470BC003A40B1 = {
 			isa = PBXGroup;
 			children = (
+				82DFB40927B2595000D7DA16 /* sport.gif */,
 				826AA22327B2224E00B76D53 /* Sounds */,
-				826AA21F27B2204C00B76D53 /* fail.mp3 */,
-				826AA22127B2220C00B76D53 /* fail2.mp3 */,
-				826AA22427B2234600B76D53 /* spring2.mp3 */,
 				826611A327B1A9EE0011F7A0 /* Alert */,
 				826AA22827B2236D00B76D53 /* Home */,
 				82F4B0E527B12D4E00F3661D /* Profile */,
@@ -370,9 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82576DD8277470BE003A40B1 /* LaunchScreen.storyboard in Resources */,
-				826AA22227B2220D00B76D53 /* fail2.mp3 in Resources */,
-				826AA22027B2204C00B76D53 /* fail.mp3 in Resources */,
-				826AA22527B2234600B76D53 /* spring2.mp3 in Resources */,
+				82DFB40A27B2595000D7DA16 /* sport.gif in Resources */,
 				82576DD5277470BE003A40B1 /* Assets.xcassets in Resources */,
 				82576DD3277470BC003A40B1 /* Main.storyboard in Resources */,
 				826611A927B1AE1D0011F7A0 /* sport.gif in Resources */,

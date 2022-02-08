@@ -23,6 +23,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         loadData()
         ProfileImage.loadGif(name: "sport")
+        ProfileImage.layer.borderWidth = 5
     }
     
     
