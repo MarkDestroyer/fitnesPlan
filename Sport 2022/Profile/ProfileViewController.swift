@@ -49,4 +49,13 @@ class ProfileViewController: UIViewController {
                 print(error)
             }
         }
+    
+    
+    @IBAction func PresentHome() {
+     DispatchQueue.main.async {
+         guard let vc = self.storyboard?.instantiateViewController(identifier: "HomeViewController") else {return}
+         guard let window = self.view.window else {return}
+         window.rootViewController = vc
+        }
+     }
  }

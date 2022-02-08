@@ -116,7 +116,7 @@ class LoginViewController: UIViewController {
     
     func setupMessage() -> EKPopUpMessage {
         
-        let image = UIImage(named: "40")!.withRenderingMode(.alwaysOriginal)
+        let image = UIImage(named: "cross")!.withRenderingMode(.alwaysOriginal)
         let title = "Данные не введены!"
         let description =
         """
@@ -159,7 +159,7 @@ class LoginViewController: UIViewController {
     
     func setupMessage2() -> EKPopUpMessage {
         
-        let image = UIImage(named: "40")!.withRenderingMode(.alwaysOriginal)
+        let image = UIImage(named: "cross")!.withRenderingMode(.alwaysOriginal)
         let title = "Данные не введены!"
         let description =
         """
@@ -202,7 +202,7 @@ class LoginViewController: UIViewController {
     
     func setupMessage3() -> EKPopUpMessage {
         
-        let image = UIImage(named: "40")!.withRenderingMode(.alwaysOriginal)
+        let image = UIImage(named: "cross")!.withRenderingMode(.alwaysOriginal)
         let title = "Данные не введены!"
         let description =
         """
@@ -243,6 +243,49 @@ class LoginViewController: UIViewController {
     }
     
     
+    func setupMessage4() -> EKPopUpMessage {
+        
+        let image = UIImage(named: "check")!.withRenderingMode(.alwaysOriginal)
+        let title = "Успех!"
+        let description =
+        """
+        Добро пожаловать!
+        """
+        
+        let themeImage = EKPopUpMessage.ThemeImage(image: EKProperty.ImageContent(image: image, size: CGSize(width: 60, height: 60), tint: .black, contentMode: .scaleAspectFit))
+        
+        let titleLabel = EKProperty.LabelContent(text: title, style: .init(font: UIFont.systemFont(ofSize: 24),
+                                                                      color: .black,
+                                                                      alignment: .center))
+        
+        let descriptionLabel = EKProperty.LabelContent(
+            text: description,
+            style: .init(
+                font: UIFont.systemFont(ofSize: 16),
+                color: .black,
+                alignment: .center
+            )
+        )
+        
+        let button = EKProperty.ButtonContent(
+            label: .init(
+                text: "ОК",
+                style: .init(
+                    font: UIFont.systemFont(ofSize: 16),
+                    color: .black
+                )
+            ),
+            backgroundColor: .init(UIColor.systemGreen),
+            highlightedBackgroundColor: .clear
+        )
+        
+        let message = EKPopUpMessage(themeImage: themeImage, title: titleLabel, description: descriptionLabel, button: button) {
+            SwiftEntryKit.dismiss()
+        }
+        return message
+    }
+    
+    
     @objc func handleShowPopUp() {
         SwiftEntryKit.display(entry: MyPopUpView(with: setupMessage()), using: setupAttributes())
     }
@@ -253,6 +296,10 @@ class LoginViewController: UIViewController {
     
     @objc func handleShowPopUp3() {
         SwiftEntryKit.display(entry: MyPopUpView(with: setupMessage3()), using: setupAttributes())
+    }
+    
+    @objc func handleShowPopUp4() {
+        SwiftEntryKit.display(entry: MyPopUpView(with: setupMessage4()), using: setupAttributes())
     }
 
     
@@ -306,6 +353,7 @@ class LoginViewController: UIViewController {
                     Session.shared.token = userProfile!.jwt
                     print("Получили токен ")
                     print(Session.shared.token)
+                    self.handleShowPopUp4()
                     DispatchQueue.main.async {
                         guard let vc = self.storyboard?.instantiateViewController(identifier: "HomeViewController") else {return}
                         guard let window = self.view.window else {return}
@@ -356,6 +404,7 @@ class LoginViewController: UIViewController {
                           Session.shared.token = userProfile!.jwt
                           print("Получили токен ")
                           print(Session.shared.token)
+                          self.handleShowPopUp4()
                           DispatchQueue.main.async {
                               guard let vc = self.storyboard?.instantiateViewController(identifier: "HomeViewController") else {return}
                               guard let window = self.view.window else {return}

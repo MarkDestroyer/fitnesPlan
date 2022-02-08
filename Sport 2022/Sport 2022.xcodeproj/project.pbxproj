@@ -31,13 +31,19 @@
 		826183F12785153600F554F9 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826183F02785153600F554F9 /* TimerViewController.swift */; };
 		826611A527B1A9FD0011F7A0 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826611A427B1A9FD0011F7A0 /* CustomAlert.swift */; };
 		826611A727B1AABA0011F7A0 /* UIView + Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826611A627B1AABA0011F7A0 /* UIView + Message.swift */; };
-		826611A927B1AE1D0011F7A0 /* sport.gif in Resources */ = {isa = PBXBuildFile; fileRef = 826611A827B1AE1D0011F7A0 /* sport.gif */; };
 		8282AA2E2776988C009471C5 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8282AA2D2776988C009471C5 /* EntryViewController.swift */; };
 		8285115827A97C3B00D67B2C /* ExercisesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285115427A97C3B00D67B2C /* ExercisesModel.swift */; };
 		8285115927A97C3B00D67B2C /* customModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8285115527A97C3B00D67B2C /* customModel.swift */; };
 		8287784127948A1D00FE442B /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287784027948A1D00FE442B /* Gradient.swift */; };
 		8287784327948C7000FE442B /* GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8287784227948C7000FE442B /* GIF.swift */; };
-		82DFB40A27B2595000D7DA16 /* sport.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82DFB40927B2595000D7DA16 /* sport.gif */; };
+		82C0C17527B2A652005FB7E2 /* sport.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82C0C17427B2A652005FB7E2 /* sport.gif */; };
+		82C0C17827B2A671005FB7E2 /* fail2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82C0C17727B2A671005FB7E2 /* fail2.mp3 */; };
+		82C0C17A27B2A67E005FB7E2 /* spring2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 82C0C17927B2A67E005FB7E2 /* spring2.mp3 */; };
+		82C0C17C27B2A852005FB7E2 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C0C17B27B2A851005FB7E2 /* check.png */; };
+		82C0C17E27B2A858005FB7E2 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 82C0C17D27B2A858005FB7E2 /* cross.png */; };
+		82C0C18027B2AAB8005FB7E2 /* exercise.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82C0C17F27B2AAB8005FB7E2 /* exercise.gif */; };
+		82C0C18227B2AAE3005FB7E2 /* plan.gif in Resources */ = {isa = PBXBuildFile; fileRef = 82C0C18127B2AAE3005FB7E2 /* plan.gif */; };
+		82C0C18427B2AD87005FB7E2 /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C0C18327B2AD87005FB7E2 /* ExercisesViewController.swift */; };
 		82F4B0E427B126CF00F3661D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4B0E327B126CF00F3661D /* ProfileViewController.swift */; };
 		82F4B0EC27B139D300F3661D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4B0EB27B139D300F3661D /* HomeViewController.swift */; };
 		82F4B0F727B170D000F3661D /* SpringImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4B0F627B170D000F3661D /* SpringImage.swift */; };
@@ -73,13 +79,20 @@
 		826183F02785153600F554F9 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		826611A427B1A9FD0011F7A0 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		826611A627B1AABA0011F7A0 /* UIView + Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Message.swift"; sourceTree = "<group>"; };
-		826611A827B1AE1D0011F7A0 /* sport.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sport.gif; path = "../../../../../Фитнес/sport.gif"; sourceTree = "<group>"; };
 		8282AA2D2776988C009471C5 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
 		8285115427A97C3B00D67B2C /* ExercisesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesModel.swift; sourceTree = "<group>"; };
 		8285115527A97C3B00D67B2C /* customModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customModel.swift; sourceTree = "<group>"; };
 		8287784027948A1D00FE442B /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		8287784227948C7000FE442B /* GIF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIF.swift; sourceTree = "<group>"; };
-		82DFB40927B2595000D7DA16 /* sport.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sport.gif; path = "../../../../Фитнес/sport.gif"; sourceTree = "<group>"; };
+		82C0C17427B2A652005FB7E2 /* sport.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sport.gif; path = "../../Фитнес/sport.gif"; sourceTree = "<group>"; };
+		82C0C17627B2A657005FB7E2 /* sport.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sport.gif; sourceTree = "<group>"; };
+		82C0C17727B2A671005FB7E2 /* fail2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = fail2.mp3; path = "../../../../Music/Music/Media.localized/Unknown Artist/Unknown Album/fail2.mp3"; sourceTree = "<group>"; };
+		82C0C17927B2A67E005FB7E2 /* spring2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = spring2.mp3; path = "../../../../Music/Music/Media.localized/Unknown Artist/Unknown Album/spring2.mp3"; sourceTree = "<group>"; };
+		82C0C17B27B2A851005FB7E2 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = "../../../Фитнес/check.png"; sourceTree = "<group>"; };
+		82C0C17D27B2A858005FB7E2 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross.png; path = "../../../Фитнес/cross.png"; sourceTree = "<group>"; };
+		82C0C17F27B2AAB8005FB7E2 /* exercise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = exercise.gif; path = "../../../Фитнес/exercise.gif"; sourceTree = "<group>"; };
+		82C0C18127B2AAE3005FB7E2 /* plan.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = plan.gif; path = "../../../Фитнес/plan.gif"; sourceTree = "<group>"; };
+		82C0C18327B2AD87005FB7E2 /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
 		82F4B0E327B126CF00F3661D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		82F4B0EB27B139D300F3661D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		82F4B0F627B170D000F3661D /* SpringImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringImage.swift; sourceTree = "<group>"; };
@@ -155,8 +168,12 @@
 		823BD10527ABAC1600C88DAB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				826611A827B1AE1D0011F7A0 /* sport.gif */,
+				82C0C17B27B2A851005FB7E2 /* check.png */,
+				82C0C17D27B2A858005FB7E2 /* cross.png */,
 				82F4B0F627B170D000F3661D /* SpringImage.swift */,
+				82C0C17627B2A657005FB7E2 /* sport.gif */,
+				82C0C17F27B2AAB8005FB7E2 /* exercise.gif */,
+				82C0C18127B2AAE3005FB7E2 /* plan.gif */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -164,7 +181,7 @@
 		82576DBF277470BC003A40B1 = {
 			isa = PBXGroup;
 			children = (
-				82DFB40927B2595000D7DA16 /* sport.gif */,
+				82C0C17427B2A652005FB7E2 /* sport.gif */,
 				826AA22327B2224E00B76D53 /* Sounds */,
 				826611A327B1A9EE0011F7A0 /* Alert */,
 				826AA22827B2236D00B76D53 /* Home */,
@@ -218,6 +235,8 @@
 		826AA22327B2224E00B76D53 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				82C0C17727B2A671005FB7E2 /* fail2.mp3 */,
+				82C0C17927B2A67E005FB7E2 /* spring2.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -264,6 +283,7 @@
 				821C310E2777303D00501189 /* Friday */,
 				821C31032777223100501189 /* Wednesday */,
 				82CBF8EE277612A9009B9926 /* Monday */,
+				82C0C18327B2AD87005FB7E2 /* ExercisesViewController.swift */,
 			);
 			path = Days;
 			sourceTree = "<group>";
@@ -364,10 +384,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				82576DD8277470BE003A40B1 /* LaunchScreen.storyboard in Resources */,
-				82DFB40A27B2595000D7DA16 /* sport.gif in Resources */,
+				82C0C17827B2A671005FB7E2 /* fail2.mp3 in Resources */,
+				82C0C17C27B2A852005FB7E2 /* check.png in Resources */,
+				82C0C17527B2A652005FB7E2 /* sport.gif in Resources */,
 				82576DD5277470BE003A40B1 /* Assets.xcassets in Resources */,
+				82C0C17A27B2A67E005FB7E2 /* spring2.mp3 in Resources */,
+				82C0C17E27B2A858005FB7E2 /* cross.png in Resources */,
+				82C0C18227B2AAE3005FB7E2 /* plan.gif in Resources */,
 				82576DD3277470BC003A40B1 /* Main.storyboard in Resources */,
-				826611A927B1AE1D0011F7A0 /* sport.gif in Resources */,
+				82C0C18027B2AAB8005FB7E2 /* exercise.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +459,7 @@
 				822781F627AD5B9E001E6916 /* CreateExerciseAPI.swift in Sources */,
 				8212803A27AC829900EDCE44 /* TrainingPlanModel.swift in Sources */,
 				8287784327948C7000FE442B /* GIF.swift in Sources */,
+				82C0C18427B2AD87005FB7E2 /* ExercisesViewController.swift in Sources */,
 				8212804427AC83A200EDCE44 /* PlanDayViewController.swift in Sources */,
 				82F4B0EC27B139D300F3661D /* HomeViewController.swift in Sources */,
 				821C31122777305600501189 /* EntryViewController5.swift in Sources */,

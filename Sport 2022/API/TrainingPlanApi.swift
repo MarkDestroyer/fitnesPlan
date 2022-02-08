@@ -34,6 +34,11 @@ final class TrainingPlanApi{
             print(trainingPlanJSON.count)
             comletion(trainingPlanJSON)
             
+            for i in trainingPlanJSON {
+                var name = i.exercise!.name
+                print(name)
+            }
+            
         } catch DecodingError.keyNotFound(let key, let context) {
             Swift.print("could not find key \(key) in JSON: \(context.debugDescription)")
         } catch DecodingError.valueNotFound(let type, let context) {

@@ -9,38 +9,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="U6n-Uh-vXS">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="U1w-mq-svE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="U1w-mq-svE" customClass="HomeViewController" customModule="Sport_2022" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hfV-g5-5f1">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0i6-kQ-WbL">
-                                <rect key="frame" x="152" y="427.66666666666669" width="124" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="УПРАЖНЕНИЯ"/>
-                                <connections>
-                                    <segue destination="zq2-V1-VpS" kind="show" id="Kuu-am-bvJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTT-Zc-sgN">
-                                <rect key="frame" x="182" y="347.66666666666669" width="64" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="ПЛАН"/>
-                                <connections>
-                                    <segue destination="c4T-dn-HVh" kind="show" id="FdB-4P-4Z7"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yeV-bZ-HaM">
+                                <rect key="frame" x="154" y="253" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="EiZ-jO-VHb"/>
+                                    <constraint firstAttribute="height" constant="120" id="NTQ-Zp-ULV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="27R-gq-d1a">
+                                <rect key="frame" x="154" y="453" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="P38-vA-sTD"/>
+                                    <constraint firstAttribute="width" constant="120" id="QGg-Yf-DFt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uA9-IS-G7i"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0i6-kQ-WbL" firstAttribute="centerY" secondItem="hfV-g5-5f1" secondAttribute="centerY" constant="-20" id="KDT-zu-Hqs"/>
-                            <constraint firstItem="sTT-Zc-sgN" firstAttribute="centerX" secondItem="hfV-g5-5f1" secondAttribute="centerX" id="Ntq-Bu-4ff"/>
-                            <constraint firstItem="0i6-kQ-WbL" firstAttribute="centerX" secondItem="hfV-g5-5f1" secondAttribute="centerX" id="bRw-9H-ilC"/>
-                            <constraint firstItem="sTT-Zc-sgN" firstAttribute="centerY" secondItem="hfV-g5-5f1" secondAttribute="centerY" constant="-100" id="fPA-5n-Gey"/>
+                            <constraint firstItem="27R-gq-d1a" firstAttribute="centerX" secondItem="hfV-g5-5f1" secondAttribute="centerX" id="7K2-lc-6ux"/>
+                            <constraint firstItem="yeV-bZ-HaM" firstAttribute="centerY" secondItem="hfV-g5-5f1" secondAttribute="centerY" constant="-150" id="REe-7K-jiA"/>
+                            <constraint firstItem="yeV-bZ-HaM" firstAttribute="centerX" secondItem="hfV-g5-5f1" secondAttribute="centerX" id="XyS-Ok-0Tk"/>
+                            <constraint firstItem="27R-gq-d1a" firstAttribute="centerY" secondItem="hfV-g5-5f1" secondAttribute="centerY" constant="50" id="bw2-iq-ilS"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
@@ -64,15 +62,19 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" id="J2O-RN-bJc"/>
+                    <connections>
+                        <outlet property="ExerciseImage" destination="27R-gq-d1a" id="Cv0-RU-gW1"/>
+                        <outlet property="PlanImage" destination="yeV-bZ-HaM" id="dOe-Xq-LXR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1u-dx-oXj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="678.5046728971962" y="101.72786177105833"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Exercises View Controller-->
         <scene sceneID="mMc-cv-Lhh">
             <objects>
-                <tabBarController id="zq2-V1-VpS" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="ExercisesViewController" id="zq2-V1-VpS" customClass="ExercisesViewController" customModule="Sport_2022" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="50v-5E-9RC"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yXa-M2-WHS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -89,7 +91,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pzn-ZL-pfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1707" y="102"/>
+            <point key="canvasLocation" x="1705" y="102"/>
         </scene>
         <!--ТАЙМЕР-->
         <scene sceneID="isF-Vu-Ts8">
@@ -457,7 +459,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Профиль" image="person.circle" catalog="system" selectedImage="person.circle.fill" id="SWw-kT-BmG"/>
                     <navigationItem key="navigationItem" title="ПРОФИЛЬ" id="XJq-fZ-Md1">
-                        <barButtonItem key="rightBarButtonItem" image="gearshape.fill" catalog="system" style="plain" id="Hl9-ww-f9D"/>
+                        <barButtonItem key="rightBarButtonItem" image="homekit" catalog="system" style="plain" id="Hl9-ww-f9D">
+                            <connections>
+                                <action selector="PresentHome" destination="Cz6-Gu-dA9" id="gyU-dR-sNw"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="Birthday" destination="JDA-39-mVW" id="5kJ-Gf-9q1"/>
@@ -473,9 +479,9 @@
         <!--Select Date View Controller-->
         <scene sceneID="8IY-dp-CxF">
             <objects>
-                <viewController id="c4T-dn-HVh" customClass="SelectDateViewController" customModule="Sport_2022" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectDateViewController" id="c4T-dn-HVh" customClass="SelectDateViewController" customModule="Sport_2022" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OhS-Fg-1nc">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXX-1G-lAP" customClass="CalendarView" customModule="CalendarSwift">
@@ -484,7 +490,7 @@
                                 <color key="backgroundColor" systemColor="separatorColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KG-Lz-NnX">
-                                <rect key="frame" x="20" y="710" width="388" height="31"/>
+                                <rect key="frame" x="20" y="764" width="388" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Начать тренировки"/>
                                 <connections>
@@ -493,7 +499,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abd-lm-5rk">
-                                <rect key="frame" x="20" y="652" width="388" height="31"/>
+                                <rect key="frame" x="20" y="706" width="388" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Загрузить тренировки"/>
                                 <connections>
@@ -554,7 +560,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mark@zeons.ru" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjW-yw-ahy">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="zeons@mail.ru" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjW-yw-ahy">
                                                 <rect key="frame" x="100" y="324" width="228" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -624,7 +630,7 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                <color key="value" systemColor="systemYellowColor"/>
+                                                <color key="value" systemColor="systemGreenColor"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                                 <color key="value" systemColor="systemBlueColor"/>
@@ -665,7 +671,7 @@
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                <color key="value" systemColor="systemYellowColor"/>
+                                <color key="value" systemColor="systemGreenColor"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                 <color key="value" systemColor="systemBlueColor"/>
@@ -697,15 +703,12 @@
             <point key="canvasLocation" x="-575.36231884057975" y="101.78571428571428"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Kuu-am-bvJ"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="calendar.circle" catalog="system" width="128" height="121"/>
         <image name="calendar.circle.fill" catalog="system" width="128" height="121"/>
         <image name="clock" catalog="system" width="128" height="121"/>
         <image name="clock.fill" catalog="system" width="128" height="121"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
@@ -725,9 +728,6 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

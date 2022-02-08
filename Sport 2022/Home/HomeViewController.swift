@@ -7,23 +7,41 @@
 
 import UIKit
 
-class HomeViewController: UITabBarController {
+class HomeViewController: UIViewController {
 
+    @IBOutlet weak var PlanImage: UIImageView!
+    @IBOutlet weak var ExerciseImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        PlanImage.loadGif(name: "plan")
+        let tap = UITapGestureRecognizer(target: self, action: #selector(PresentCalendar))
+        PlanImage.addGestureRecognizer(tap)
+        PlanImage.isUserInteractionEnabled = true
+        ExerciseImage.loadGif(name: "exercise")
+        let tap2 = UITapGestureRecognizer(target: self, action: #selector(PresentExercises))
+        ExerciseImage.addGestureRecognizer(tap2)
+        ExerciseImage.isUserInteractionEnabled = true
     }
     
+    
+    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    @objc func PresentCalendar() {
+     DispatchQueue.main.async {
+         guard let vc = self.storyboard?.instantiateViewController(identifier: "SelectDateViewController") else {return}
+         guard let window = self.view.window else {return}
+         window.rootViewController = vc
+        }
+     }
+     
+     
+     @objc func PresentExercises() {
+      DispatchQueue.main.async {
+          guard let vc = self.storyboard?.instantiateViewController(identifier: "ExercisesViewController") else {return}
+          guard let window = self.view.window else {return}
+          window.rootViewController = vc
+         }
+      }
 
 }
